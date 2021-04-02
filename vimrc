@@ -29,3 +29,8 @@ let java_highlight_java_lang_ids=1
 
 "Indentation
 filetype indent on
+
+"Plugin staff
+execute pathogen#infect()
+syntax on
+filetype plugin indent on
