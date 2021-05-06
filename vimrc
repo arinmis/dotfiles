@@ -1,3 +1,8 @@
+" copy and paste from vim clickboard
+" https://vim.fandom.com/wiki/GNU/Linux_clipboard_copy/paste_with_xclip
+vmap <leader>xyy :!xclip -f -sel clip<CR>
+map  <leader>xpp :-1r !xclip -o -sel clip<CR>
+
 " Set numbers by default 
 :set number
 
@@ -29,6 +34,10 @@ let java_highlight_java_lang_ids=1
 
 "Indentation
 filetype indent on
+set expandtab
+set shiftwidth=4
+set softtabstop=4
+filetype plugin indent on
 
 "Plugin staff
 execute pathogen#infect()
