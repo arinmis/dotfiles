@@ -38,8 +38,4 @@ set expandtab
 set shiftwidth=4
 set softtabstop=4
 filetype plugin indent on
-
-"Plugin staff
-execute pathogen#infect()
 syntax on
-filetype plugin indent on
