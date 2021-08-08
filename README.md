@@ -4,6 +4,6 @@
 ## Installation
     sudo apt install vim  
     sudo apt install xclip
-    git clone https://github.com/Arinmis/my-vim-config.git 
-    cd my-vim-config
+    git clone https://github.com/Arinmis/vim-settings.git
+    cd vim-settings
     ./install.sh
