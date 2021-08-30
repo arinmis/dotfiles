@@ -1,5 +1,5 @@
 # my-vim-config
-".vimrc" file that configure vim settings
+".vimrc" file that configures vim settings
 
 ## Installation
     sudo apt install vim  
