@@ -42,7 +42,7 @@ autocmd FileType javascript setlocal shiftwidth=4 softtabstop=4 expandtab
 " Other things
 
 "Take care of indents for Java.
-set autoindent
+" set autoindent
 set si
 
 "Java anonymous classes. Sometimes, you have to use them.
@@ -52,7 +52,6 @@ let java_comment_strings=1
 let java_highlight_java_lang_ids=1
 
 filetype indent on
-filetype plugin indent on
 syntax on
 
 
