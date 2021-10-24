@@ -28,7 +28,7 @@ autocmd FileType dart setlocal shiftwidth=2 softtabstop=2 expandtab
 autocmd FileType java setlocal shiftwidth=4 softtabstop=4 expandtab
 
 " python file
-autocmd FileType ptyhon setlocal shiftwidth=4 softtabstop=4 expandtab
+autocmd FileType python setlocal shiftwidth=4 softtabstop=4 expandtab
 
 " html file 
 autocmd FileType html setlocal shiftwidth=2 softtabstop=2 expandtab
