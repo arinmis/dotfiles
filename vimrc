@@ -1,11 +1,8 @@
-" copy and paste from vim clickboard
-" https://vim.fandom.com/wiki/GNU/Linux_clipboard_copy/paste_with_xclip
-vmap <leader>xyy :!xclip -f -sel clip<CR>
-map  <leader>xpp :-1r !xclip -o -sel clip<CR>
+" make vim and system clickboard common 
+set clipboard=unnamedplus
 
 " Set numbers by default 
 :set number
-
 
 " Press jk to return to normal mode when in insert mode
 inoremap jk <ESC>
@@ -19,31 +16,30 @@ vnoremap <ESC> <NOP>
 " Press jk when in Command mode, to go back to normal mode
 cnoremap jk <ESC>
 
-" Indentaions
 
-" dart file
-autocmd FileType dart setlocal shiftwidth=2 softtabstop=2 expandtab
+" default indentation 
+set shiftwidth=4 
+set softtabstop=4
+set expandtab
 
-" java file
-autocmd FileType java setlocal shiftwidth=4 softtabstop=4 expandtab
 
-" python file
-autocmd FileType python setlocal shiftwidth=4 softtabstop=4 expandtab
+" Custom Indentaions
 
 " html file 
 autocmd FileType html setlocal shiftwidth=2 softtabstop=2 expandtab
 
-" JS html 
-autocmd FileType javascript setlocal shiftwidth=4 softtabstop=4 expandtab
+" dart file
+autocmd FileType dart setlocal shiftwidth=2 softtabstop=2 expandtab
 
+" dart yaml 
+autocmd FileType yaml setlocal shiftwidth=2 softtabstop=2 expandtab
 
 
 
 " Other things
-
-"Take care of indents for Java.
-" set autoindent
 set si
+set smartindent
+set autoindent
 
 "Java anonymous classes. Sometimes, you have to use them.
 set cinoptions+=j1
@@ -51,9 +47,11 @@ set cinoptions+=j1
 let java_comment_strings=1
 let java_highlight_java_lang_ids=1
 
+
+" run plugin manager
+execute pathogen#infect()
 filetype indent on
 syntax on
-
 
 
 
