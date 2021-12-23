@@ -1,9 +1,11 @@
-# install dependencies
+# install required programs 
+# install vim
 sudo apt install vim-gtk3  
-mkdir -p ~/.vim/autoload ~/.vim/bundle && \
-curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
+# install vim
+sudo apt install tmux
+
 
 # install runtime configs
-cp vimrc ~ 
-mv ~/vimrc ~/.vimrc
+cp config-files/.vimrc ~ 
+cp config-files/.tmux.conf ~ 
 echo Setup compeleted!!!
