@@ -8,7 +8,8 @@
     
     
 ## Update repo
-To include new settings to repo, run this:   
+To include new settings to repo, run this: 
+```
     ./update-configs.sh
-    
+```
 
