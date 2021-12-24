@@ -1,0 +1,23 @@
+[/]
+default='b1dcc9dd-5262-4d8d-a863-c897e6d979b9'
+list=['b1dcc9dd-5262-4d8d-a863-c897e6d979b9', '88bc802c-cf8d-44d5-a4b2-4a082e00c939']
+
+[:88bc802c-cf8d-44d5-a4b2-4a082e00c939]
+background-transparency-percent=17
+font='Monospace 14'
+use-system-font=false
+use-theme-colors=false
+use-theme-transparency=false
+use-transparent-background=true
+visible-name='light'
+
+[:b1dcc9dd-5262-4d8d-a863-c897e6d979b9]
+background-color='rgb(0,0,0)'
+background-transparency-percent=16
+font='Monospace 14'
+foreground-color='rgb(255,255,255)'
+use-system-font=false
+use-theme-colors=false
+use-theme-transparency=false
+use-transparent-background=true
+visible-name='dark'

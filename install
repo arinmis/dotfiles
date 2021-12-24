@@ -19,5 +19,8 @@ sudo apt install tmux
 cp config-files/.vimrc ~ 
 cp config-files/.tmux.conf ~ 
 
+# terminal theme
+dconf load /org/gnome/terminal/legacy/profiles:/ < config-files/gnome-terminal-profiles.dconf
+
 
 echo "==> Setup is compeleted!!!"
