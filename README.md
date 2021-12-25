@@ -3,13 +3,13 @@
 
 ## Installation  
     git clone https://github.com/Arinmis/vim-settings.git
-    cd vim-settings
-    ./install
+    cd my-configs 
+    ./install.sh
     
     
 ## Update repo
 To include new settings to repo, run this: 
 ```
-./update-configs
+./update-configs.sh
 ```
 
