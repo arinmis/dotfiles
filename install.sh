@@ -36,4 +36,8 @@ dconf load /org/gnome/terminal/legacy/profiles:/ < config-files/gnome-terminal-p
 # vim plugin manager: Vundle
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
+# set background
+gsettings set org.gnome.desktop.background picture-options 'none'
+gsettings set org.gnome.desktop.background primary-color '#000000'
+
 echo "==> Setup is compeleted!!!"
