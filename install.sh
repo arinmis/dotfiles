@@ -27,6 +27,8 @@ install tmux
 install xclip 
 install tree 
 install curl
+# image viewer
+install nomacs
 
 # install runtime configs
 cp config-files/.vimrc ~ 
