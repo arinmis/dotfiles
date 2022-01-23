@@ -27,12 +27,11 @@ install tmux
 install xclip 
 install tree 
 install curl
-# image viewer
-install nomacs
 
 # install runtime configs
 cp config-files/.vimrc ~ 
 cp config-files/.tmux.conf ~ 
+cp config-files/.bashrc ~ 
 # terminal theme
 dconf load /org/gnome/terminal/legacy/profiles:/ < config-files/gnome-terminal-profiles.dconf
 # vim plugin manager: Vundle

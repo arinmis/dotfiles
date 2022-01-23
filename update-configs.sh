@@ -9,6 +9,7 @@ echo ""
 # pull configs files
 cp ~/.vimrc config-files 
 cp ~/.tmux.conf config-files
+cp ~/.bashrc config-files
 dconf dump /org/gnome/terminal/legacy/profiles:/ > config-files/gnome-terminal-profiles.dconf
 
 echo "==> Updating config files is completed!!!" 
