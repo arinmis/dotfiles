@@ -32,6 +32,7 @@ install curl
 cp config-files/.vimrc ~ 
 cp config-files/.tmux.conf ~ 
 cp config-files/.bashrc ~ 
+cp config-files/.alacritty.yml ~ 
 # terminal theme
 dconf load /org/gnome/terminal/legacy/profiles:/ < config-files/gnome-terminal-profiles.dconf
 # vim plugin manager: Vundle

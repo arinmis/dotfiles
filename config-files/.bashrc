@@ -75,7 +75,6 @@ esac
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
-    alias ls='ls --color=auto'
     #alias dir='dir --color=auto'
     #alias vdir='vdir --color=auto'
 
@@ -117,14 +116,19 @@ if ! shopt -oq posix; then
 fi
 
 
-# copy alias
-alias copy='xclip -sel clip'
-
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/home/arinmis/Downloads/google-cloud-sdk/path.bash.inc' ]; then . '/home/arinmis/Downloads/google-cloud-sdk/path.bash.inc'; fi
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/home/arinmis/Downloads/google-cloud-sdk/completion.bash.inc' ]; then . '/home/arinmis/Downloads/google-cloud-sdk/completion.bash.inc'; fi
 
-# alias for python3 
+### ALIASES ###
+#alias ls='ls -lah --color=auto'
+alias ls='ls --color=auto'
+alias mkdir='mkdir -pv'
 alias python=python3
+alias copy='xclip -sel clip'
+# confimations
+alias mv='mv -i' 
+alias cp='cp -i' 
+alias rm='rm -i' 
