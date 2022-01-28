@@ -1,6 +1,11 @@
 font:
   size: 14
 
+window:
+  dimensions:
+    columns: 80 
+    lines: 25 
+
 colors:
  primary:
     background: '0x000000'
