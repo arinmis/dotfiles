@@ -133,3 +133,5 @@ alias ls='ls --color=auto'
 alias ll='ls -ahlF'
 alias la='ls -A'
 alias l='ls -CF'
+
+export PATH=/home/arinmis/.local/bin:$PATH
