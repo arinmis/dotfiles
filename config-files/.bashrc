@@ -120,7 +120,6 @@ if [ -f '/home/arinmis/Downloads/google-cloud-sdk/completion.bash.inc' ]; then .
 
 ### ALIASES ###
 alias mkdir='mkdir -pv'
-alias python=python3
 alias copy='xclip -sel clip'
 # confimations
 alias mv='mv -i' 

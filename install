@@ -42,4 +42,7 @@ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 gsettings set org.gnome.desktop.background picture-options 'none'
 gsettings set org.gnome.desktop.background primary-color '#000000'
 
+# set python3 default python version 
+update-alternatives --install /usr/bin/python python /usr/bin/python3 10
+
 echo "==> Setup is compeleted!!!"
