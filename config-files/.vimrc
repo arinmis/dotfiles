@@ -8,6 +8,10 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 
+" Fugitive is required for Conflicted
+Plugin 'tpope/vim-fugitive'
+Plugin 'christoomey/vim-conflicted'
+
 " File manager
 Plugin 'preservim/nerdtree'
 
@@ -19,6 +23,8 @@ Plugin 'Chiel92/vim-autoformat'
 
 " js highlight
 Plugin 'pangloss/vim-javascript'
+Plugin 'leafgarland/typescript-vim'
+Plugin 'maxmellon/vim-jsx-pretty'
 
 " template literals highlight
 Plugin 'jonsmithers/vim-html-template-literals'
