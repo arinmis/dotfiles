@@ -5,11 +5,9 @@ window:
   dimensions:
     columns: 80 
     lines: 25 
+    opacity: .9
 
 colors:
  primary:
     background: '0x000000'
-    
-# Background opacity
-background_opacity: .9
 

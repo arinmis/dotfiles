@@ -22,7 +22,7 @@ echo "==> Here we go..."
 # install required programs 
 sudo apt update
 install git 
-install gvim
+install vim-gtk3
 install tmux 
 install xclip 
 install tree 
