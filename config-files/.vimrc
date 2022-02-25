@@ -21,6 +21,9 @@ Plugin 'mattn/emmet-vim'
 " code formatter
 Plugin 'Chiel92/vim-autoformat'
 
+" prettier  
+Plugin 'prettier/vim-prettier'
+
 " js highlight
 Plugin 'pangloss/vim-javascript'
 Plugin 'leafgarland/typescript-vim'
@@ -105,11 +108,13 @@ let java_highlight_java_lang_ids=1
 
 syntax on
 
-
 " format on save
 " au BufWrite * :Autoformat
 " format when I want
 noremap <S-f> :Autoformat<CR>
+
+" Prettier shortcut
+nmap <C-p> <Plug>(Prettier)
 
 
 " responsive html boilerplate
