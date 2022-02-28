@@ -116,6 +116,10 @@ noremap <S-f> :Autoformat<CR>
 " Prettier shortcut
 nmap <C-p> <Plug>(Prettier)
 
+" for with prettier on save
+let g:prettier#autoformat = 1
+let g:prettier#autoformat_require_pragma = 0
+
 
 " responsive html boilerplate
 let g:user_emmet_settings = {
