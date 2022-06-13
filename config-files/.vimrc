@@ -29,6 +29,7 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'leafgarland/typescript-vim'
 Plugin 'maxmellon/vim-jsx-pretty'
 
+
 " template literals highlight
 Plugin 'jonsmithers/vim-html-template-literals'
 
@@ -226,3 +227,5 @@ nnoremap <C-t> :NERDTreeToggle<CR>
 nnoremap <C-f> :NERDTreeFind<CR>
 " show hidden files
 let NERDTreeShowHidden=1
+
+

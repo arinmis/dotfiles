@@ -2,11 +2,11 @@ font:
   size: 14
 
 window:
-  opacity: 0.9
+  opacity: 1
   dimensions:
     columns: 80
     lines: 25
 
 colors:
   primary:
-    background: "0x000000"
+    background: "0x212121"
