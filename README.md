@@ -1,15 +1,17 @@
-# my-configs
+# dev-conf
 ".vimrc" and ".tmux.conf" file that configures my development enviroment 
 
 ## Installation  
-    git clone https://github.com/Arinmis/vim-settings.git
-    cd my-configs 
-    ./install.sh
+```
+git clone https://github.com/Arinmis/vim-settings.git
+cd dev-conf 
+./install
+```
     
     
 ## Update repo
-To include new settings to repo, run this: 
+To include new settings to repository, run this: 
 ```
-./update-configs.sh
+./update-configs
 ```
 
