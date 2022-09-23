@@ -1,10 +1,7 @@
-echo "                      ___             __ _"
-echo "  /\/\  _   _        / __\___  _ __  / _(_) __ _ ___"
-echo " /    \| | | |_____ / /  / _ \| '_ \| |_| |/ _  / __|"
-echo "/ /\/\ \ |_| |_____/ /__| (_) | | | |  _| | (_| \__ \ "
-echo "\/    \/\__, |     \____/\___/|_| |_|_| |_|\__, |___/"
-echo "        |___/                              |___/"
-echo ""
+if [ -x "$(command -v figlet)" ]
+    then 
+        figlet dev-conf 
+    fi
 
 # install given parameter programs with 'apt'
 install () {
@@ -49,3 +46,5 @@ gsettings set org.gnome.desktop.background primary-color '#000000'
 update-alternatives --install /usr/bin/python python /usr/bin/python3 10
 
 echo "==> Setup is compeleted!!!"
+
+                                           
