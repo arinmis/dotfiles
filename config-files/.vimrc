@@ -88,6 +88,9 @@ autocmd FileType dart setlocal shiftwidth=2 softtabstop=2 expandtab
 " js file
 autocmd filetype javascript setlocal shiftwidth=2 softtabstop=2 expandtab
 
+" js file
+autocmd filetype typescript setlocal shiftwidth=2 softtabstop=2 expandtab
+
 " vue file
 autocmd filetype vue setlocal shiftwidth=2 softtabstop=2 expandtab
 

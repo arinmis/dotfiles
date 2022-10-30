@@ -121,7 +121,7 @@ if [ -f '/home/arinmis/Downloads/google-cloud-sdk/completion.bash.inc' ]; then .
 ### ALIASES ###
 alias mkdir='mkdir -pv'
 alias copy='xclip -sel clip'
-# confimations
+# confirmations
 alias mv='mv -i' 
 alias cp='cp -i' 
 alias rm='rm -i' 
@@ -142,3 +142,9 @@ export NVM_DIR="$HOME/.config/nvm"
 # set vim env variable
 export EDITOR=vim
 export VISUAL=vim
+
+
+# android sdk env
+export ANDROID_SDK_ROOT=$HOME/Android/Sdk
+export PATH=$PATH:$ANDROID_SDK_ROOT/emulator
+export PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools
