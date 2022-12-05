@@ -97,6 +97,9 @@ autocmd filetype vue setlocal shiftwidth=2 softtabstop=2 expandtab
 " dart yaml
 autocmd FileType yaml setlocal shiftwidth=2 softtabstop=2 expandtab
 
+" make files
+autocmd FileType make set noexpandtab shiftwidth=8 softtabstop=0
+
 
 
 " Other things
