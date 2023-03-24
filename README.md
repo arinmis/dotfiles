@@ -12,6 +12,6 @@ cd dev-conf
 ## Update repo
 To include new settings to repository, run this: 
 ```
-./update-configs
+./update
 ```
 
