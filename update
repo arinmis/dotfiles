@@ -4,12 +4,12 @@ if [ -x "$(command -v figlet)" ]
     fi
 
 # pull configs files
-cp ~/.vimrc config-files 
-cp ~/.tmux.conf config-files
-cp ~/.bashrc config-files
-cp ~/.alacritty.yml config-files
-cp ~/.gitignore config-files
+cp ~/.vimrc configs 
+cp ~/.tmux.conf configs
+cp ~/.bashrc configs
+cp ~/.alacritty.yml configs
+cp ~/.gitignore configs
 
-dconf dump /org/gnome/terminal/legacy/profiles:/ > config-files/gnome-terminal-profiles.dconf
+dconf dump /org/gnome/terminal/legacy/profiles:/ > configs/gnome-terminal-profiles.dconf
 
 echo "==> Updating config files is completed!!!" 

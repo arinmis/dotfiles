@@ -26,15 +26,15 @@ install tree
 install curl
 
 # install runtime configs
-cp config-files/.vimrc ~ 
-cp config-files/.tmux.conf ~ 
-cp config-files/.bashrc ~ 
-cp config-files/.alacritty.yml ~ 
+cp configs/.vimrc ~ 
+cp configs/.tmux.conf ~ 
+cp configs/.bashrc ~ 
+cp configs/.alacritty.yml ~ 
 # global gitignore file
-cp config-files/.gitignore ~ 
+cp configs/.gitignore ~ 
 git config --global core.excludesfile ~/.gitignore
 # terminal theme
-dconf load /org/gnome/terminal/legacy/profiles:/ < config-files/gnome-terminal-profiles.dconf
+dconf load /org/gnome/terminal/legacy/profiles:/ < configs/gnome-terminal-profiles.dconf
 # vim plugin manager: Vundle
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 

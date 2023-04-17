@@ -36,6 +36,9 @@ Plugin 'jonsmithers/vim-html-template-literals'
 " vue syntax highlight
 Plugin 'posva/vim-vue'
 
+" Vim fireplace
+Plugin 'tpope/vim-fireplace'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
