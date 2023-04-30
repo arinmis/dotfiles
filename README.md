@@ -1,5 +1,5 @@
-# dev-conf
-".vimrc" and ".tmux.conf" file that configures my development enviroment 
+# dotfiles 
+All the nesseary dotfiles for my Ubuntu machine.
 
 ## Installation  
 ```

@@ -15,11 +15,18 @@ Plugin 'christoomey/vim-conflicted'
 " File manager
 Plugin 'preservim/nerdtree'
 
+" plugin for ml
+Plugin 'jez/vim-better-sml'
+
 " emmet for vim
 Plugin 'mattn/emmet-vim'
 
 " code formatter
 Plugin 'Chiel92/vim-autoformat'
+
+" for REPL
+" Plugin 'preservim/vimux'
+Plugin 'benmills/vimux'
 
 " prettier  
 Plugin 'prettier/vim-prettier'
