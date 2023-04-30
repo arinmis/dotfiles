@@ -4,12 +4,12 @@ all: install
 
 # install required programs 
 programs: 
-	sudo apt update && upgrade
-	install git 
-	install tmux 
-	install xclip 
-	install tree 
-	install curl
+	sudo apt update && sudo apt upgrade
+	sudo apt install git 
+	sudo apt install tmux 
+	sudo apt install xclip 
+	sudo apt install tree 
+	sudo apt install curl
 
 # install runtime configs
 install:
