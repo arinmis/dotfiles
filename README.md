@@ -1,17 +1,23 @@
 # dotfiles 
 All the nesseary dotfiles for my Ubuntu machine.
 
-## Installation  
+## Install config files  
 ```
-git clone https://github.com/Arinmis/vim-settings.git
-cd dev-conf 
-./install
-```
-    
-    
-## Update repo
-To include new settings to repository, run this: 
-```
-./update
+make install
 ```
 
+## Install usefull programs 
+```
+make programs
+```
+
+## Synchronize local configs with the repository
+```
+make sync
+```
+
+## Remove all configs files 
+```
+make clean
+```
+    
