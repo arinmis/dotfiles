@@ -1,5 +1,5 @@
 # dotfiles 
-All the nesseary dotfiles for my Ubuntu machine.
+All the necessary dotfiles for my Ubuntu machine.
 
 ## Install config files  
 ```
