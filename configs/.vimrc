@@ -104,7 +104,10 @@ autocmd filetype typescript setlocal shiftwidth=2 softtabstop=2 expandtab
 " vue file
 autocmd filetype vue setlocal shiftwidth=2 softtabstop=2 expandtab
 
-" dart yaml
+" yaml
+autocmd FileType yaml setlocal shiftwidth=2 softtabstop=2 expandtab
+
+" yml
 autocmd FileType yaml setlocal shiftwidth=2 softtabstop=2 expandtab
 
 " make files
