@@ -10,6 +10,7 @@ programs:
 	sudo apt install xclip 
 	sudo apt install tree 
 	sudo apt install curl
+	sudo apt install jq
 
 # install runtime configs
 install:
