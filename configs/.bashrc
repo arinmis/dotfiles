@@ -149,3 +149,22 @@ export ANDROID_SDK_ROOT=$HOME/Android/Sdk
 export PATH=$PATH:$ANDROID_SDK_ROOT/emulator
 export PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools
 . "$HOME/.cargo/env"
+
+# Load Angular CLI autocompletion.
+# source <(ng completion script)
+
+# shared history
+export PROMPT_COMMAND="history -a; history -n"
+
+# export DOTNET_ROOT=$HOME/dotnet
+# export PATH=$PATH:$HOME/dotnet
+export DOTNET_SYSTEM_GLOBALIZATION_INVARIANT=1
+
+export DOTNET_ROOT=$HOME/.dotnet
+export PATH=$PATH:$DOTNET_ROOT:$DOTNET_ROOT/tools
+
+# alias dotnet=~/dotnet/dotnet
+#
+#
+# export DOTNET_SYSTEM_GLOBALIZATION_INVARIANT=1
+
