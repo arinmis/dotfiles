@@ -6,6 +6,7 @@ all: install
 programs: 
 	sudo apt update && sudo apt upgrade
 	sudo apt install git 
+	sudo apt install vim 
 	sudo apt install tmux 
 	sudo apt install xclip 
 	sudo apt install tree 
