@@ -4,14 +4,8 @@ all: install
 
 # install required programs 
 programs: 
-	sudo apt update && sudo apt upgrade
-	sudo apt install git 
-	sudo apt install vim 
-	sudo apt install tmux 
-	sudo apt install xclip 
-	sudo apt install tree 
-	sudo apt install curl
-	sudo apt install jq
+	sudo apt update && sudo apt upgrade -y
+	sudo apt install -y git vim tmux xclip tree curl jq fzf nomacs
 
 # install runtime configs
 install:
@@ -19,7 +13,6 @@ install:
 	cp configs/.vimrc ~ 
 	cp configs/.tmux.conf ~ 
 	cp configs/.bashrc ~ 
-	cp configs/.alacritty.yml ~ 
 	# global gitignore file
 	cp configs/.gitignore ~ 
 	git config --global core.excludesfile ~/.gitignore
@@ -31,7 +24,7 @@ install:
 	# set python3 default python version 
 	sudo update-alternatives --install /usr/bin/python python /usr/bin/python3 10
 	# vim plugin manager: Vundle
-	git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+	# git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 
 # syncronize repository with local configs, update the repository
@@ -39,7 +32,6 @@ sync:
 	cp ~/.vimrc configs 
 	cp ~/.tmux.conf configs
 	cp ~/.bashrc configs
-	cp ~/.alacritty.yml configs
 	cp ~/.gitignore configs
 	dconf dump /org/gnome/terminal/legacy/profiles:/ > configs/gnome-terminal-profiles.dconf
 	echo "==> Updating config files is completed!!!" 
@@ -50,6 +42,5 @@ clean:
 	cp ~/.vimrc configs 
 	cp ~/.tmux.conf configs
 	cp ~/.bashrc configs
-	cp ~/.alacritty.yml configs
 	cp ~/.gitignore configs
 	echo "==> All the dot files are removed!!!" 

@@ -168,3 +168,9 @@ export PATH=$PATH:$DOTNET_ROOT:$DOTNET_ROOT/tools
 #
 # export DOTNET_SYSTEM_GLOBALIZATION_INVARIANT=1
 
+
+# find file with fzf and open with vim
+vf() {
+  local path="${1:-.}" # Default to current directory if no argument is provided
+  vim "$(find "$path" -type f | fzf)"
+}
