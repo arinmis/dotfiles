@@ -166,7 +166,7 @@ export PATH=$PATH:$DOTNET_ROOT:$DOTNET_ROOT/tools
 # alias dotnet=~/dotnet/dotnet
 #
 #
-# export DOTNET_SYSTEM_GLOBALIZATION_INVARIANT=1
+export DOTNET_SYSTEM_GLOBALIZATION_INVARIANT=false 
 
 
 # find file with fzf and open with vim
@@ -174,3 +174,6 @@ vf() {
   local path="${1:-.}" # Default to current directory if no argument is provided
   vim "$(find "$path" -type f | fzf)"
 }
+
+alias emu8086="wine /opt/emu8086/emu8086.exe"
+

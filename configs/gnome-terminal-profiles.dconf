@@ -20,6 +20,7 @@ visible-name='light'
 [:b1dcc9dd-5262-4d8d-a863-c897e6d979b9]
 background-color='rgb(0,0,0)'
 background-transparency-percent=7
+bold-is-bright=false
 font='Monospace 14'
 foreground-color='rgb(255,255,255)'
 highlight-colors-set=false
