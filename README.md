@@ -1,9 +1,10 @@
 # dotfiles 
-All the necessary dotfiles for my Ubuntu machine.
+
+All the necessary dotfiles and programs for a new Ubuntu machine.
 
 ## Install config files  
 ```
-make install
+make configs
 ```
 
 ## Install usefull programs 
@@ -16,8 +17,15 @@ make programs
 make sync
 ```
 
-## Remove all configs files 
+### Quick setup
 ```
-make clean
+sudo apt update && sudo apt upgrade -y
+sudo apt install build-essential git -y
+git clone https://github.com/arinmis/dotfiles.git
+cd dotfiles
+make 
 ```
+
+Also run `PluginInstall` command in `Vim` command mode
+
     
