@@ -4,7 +4,7 @@ All the necessary dotfiles and programs for a new Ubuntu machine.
 
 ## Install config files  
 ```
-make configs
+make conf
 ```
 
 ## Install usefull programs 
@@ -27,5 +27,3 @@ make
 ```
 
 Also run `PluginInstall` command in `Vim` command mode
-
-    

@@ -1,6 +1,6 @@
-.SILENT: sync configs configs
+.SILENT: sync programs conf
 
-all: programs configs
+all: programs conf
 
 # install required programs 
 programs: 
@@ -8,7 +8,7 @@ programs:
 	apt install -y vim tmux ripgrep xclip tree curl jq fzf nomacs 
 
 # install runtime configs
-configs:
+conf:
 	cp configs/.vimrc ~ 
 	cp configs/.tmux.conf ~ 
 	cp configs/.bashrc ~ 
