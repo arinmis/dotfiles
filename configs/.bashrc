@@ -148,7 +148,6 @@ export VISUAL=vim
 export ANDROID_SDK_ROOT=$HOME/Android/Sdk
 export PATH=$PATH:$ANDROID_SDK_ROOT/emulator
 export PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools
-. "$HOME/.cargo/env"
 
 # Load Angular CLI autocompletion.
 # source <(ng completion script)
