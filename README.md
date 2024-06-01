@@ -23,7 +23,8 @@ sudo apt update && sudo apt upgrade -y
 sudo apt install build-essential git -y
 git clone https://github.com/arinmis/dotfiles.git
 cd dotfiles
-make 
+sudo make programs 
+make conf 
 ```
 
 Also run `PluginInstall` command in `Vim` command mode
