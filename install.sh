@@ -4,7 +4,7 @@ set -e
 
 function programs() {
   apt update && apt upgrade -y
-  apt install -y vim tmux ripgrep xclip tree curl jq fzf nomacs 
+  apt install -y vim tmux ripgrep xclip tree curl jq fzf nomacs gitk meld
   install_neovim
 }
 
