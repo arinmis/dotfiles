@@ -9,23 +9,23 @@ function programs() {
 }
 
 function conf() {
-  cp configs/.vimrc $HOME 
-  cp configs/.tmux.conf $HOME 
-  cp configs/.bashrc $HOME 
-  cp configs/.gitignore $HOME 
-  cp -r configs/ $HOME/.config/nvim
+  cp config/.vimrc $HOME 
+  cp config/.tmux.conf $HOME 
+  cp config/.bashrc $HOME 
+  cp config/.gitignore $HOME 
+  cp -r config/ $HOME/.config/nvim
   git config --global core.excludesfile $HOME/.gitignore
   git clone https://github.com/VundleVim/Vundle.vim.git $HOME/.vim/bundle/Vundle.vim || true
-  echo "==> Installing runtime configs is completed!!!"
+  echo "==> Installing runtime config is completed!!!"
 }
 
 function sync() {
-  cp $HOME/.vimrc configs 
-  cp $HOME/.tmux.conf configs
-  cp $HOME/.bashrc configs
-  cp $HOME/.gitignore configs
-  rm -rf configs/nvim
-  cp -r $HOME/.config/nvim configs
+  cp $HOME/.vimrc config 
+  cp $HOME/.tmux.conf config
+  cp $HOME/.bashrc config
+  cp $HOME/.gitignore config
+  rm -rf config/nvim
+  cp -r $HOME/.config/nvim config
   echo "==> Updating config files is completed!!!"
 }
 
