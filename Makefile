@@ -5,7 +5,7 @@ all: programs conf
 # install required programs 
 programs: 
 	apt update && apt upgrade -y
-	apt install -y vim tmux ripgrep xclip tree curl jq fzf nomacs 
+	apt install -y vim tmux ripgrep xclip tree curl jq fzf nomacs neovim
 
 # install runtime configs
 conf:
@@ -13,6 +13,7 @@ conf:
 	cp configs/.tmux.conf ~ 
 	cp configs/.bashrc ~ 
 	cp configs/.gitignore ~ 
+	cp -r configs/ ~/.config/nvim
 	git config --global core.excludesfile ~/.gitignore
 	git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 	echo "==> Installing runtime configs is completed!!!"
@@ -23,4 +24,5 @@ sync:
 	cp ~/.tmux.conf configs
 	cp ~/.bashrc configs
 	cp ~/.gitignore configs
+	cp -r ~/.config/nvim configs
 	echo "==> Updating config files is completed!!!" 
