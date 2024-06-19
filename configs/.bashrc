@@ -176,3 +176,5 @@ vf() {
 
 alias emu8086="wine /opt/emu8086/emu8086.exe"
 
+. "$HOME/.cargo/env"
+
