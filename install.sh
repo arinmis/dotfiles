@@ -24,6 +24,7 @@ function sync() {
   cp ~/.tmux.conf configs
   cp ~/.bashrc configs
   cp ~/.gitignore configs
+  rm -rf configs/nvim
   cp -r ~/.config/nvim configs
   echo "==> Updating config files is completed!!!"
 }
