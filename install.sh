@@ -16,7 +16,7 @@ function conf() {
   cp config/.tmux.conf $USER_HOME 
   cp config/.bashrc $USER_HOME 
   cp config/.gitignore $USER_HOME 
-  cp -r config/ $USER_HOME/.config/nvim
+  cp -r config/nvim $USER_HOME/.config
   git config --global core.excludesfile $USER_HOME/.gitignore
   git clone https://github.com/VundleVim/Vundle.vim.git $USER_HOME/.vim/bundle/Vundle.vim || true
   echo "==> Installing runtime config is completed!!!"
