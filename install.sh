@@ -1,7 +1,6 @@
 #!/bin/bash
 
 # Store the original user's home directory
-USER_HOME=$HOME
 set -e
 
 function programs() {
@@ -11,24 +10,23 @@ function programs() {
 }
 
 function conf() {
-  echo $USER_HOME
-  cp config/.vimrc $USER_HOME 
-  cp config/.tmux.conf $USER_HOME 
-  cp config/.bashrc $USER_HOME 
-  cp config/.gitignore $USER_HOME 
-  cp -r config/nvim $USER_HOME/.config
-  git config --global core.excludesfile $USER_HOME/.gitignore
-  git clone https://github.com/VundleVim/Vundle.vim.git $USER_HOME/.vim/bundle/Vundle.vim || true
+  cp config/.vimrc ~ 
+  cp config/.tmux.conf ~ 
+  cp config/.bashrc ~ 
+  cp config/.gitignore ~ 
+  cp -r config/nvim ~/.config
+  git config --global core.excludesfile ~/.gitignore
+  git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim || true
   echo "==> Installing runtime config is completed!!!"
 }
 
 function sync() {
-  cp $USER_HOME/.vimrc config 
-  cp $USER_HOME/.tmux.conf config
-  cp $USER_HOME/.bashrc config
-  cp $USER_HOME/.gitignore config
+  cp ~/.vimrc config 
+  cp ~/.tmux.conf config
+  cp ~/.bashrc config
+  cp ~/.gitignore config
   rm -rf config/nvim
-  cp -r $USER_HOME/.config/nvim config
+  cp -r ~/.config/nvim config
   echo "==> Updating config files is completed!!!"
 }
 
