@@ -1,30 +1,23 @@
 # dotfiles 
 
-All the necessary dotfiles and programs for a new Ubuntu machine.
+All the necessary dotfiles and programs for a brand new Ubuntu installation.
 
 ## Install config files  
 ```
-make conf
+./install.sh conf
 ```
 
-## Install usefull programs 
+## Install useful programs 
 ```
-make programs
+sudo ./install.sh programs
 ```
 
-## Synchronize local configs with the repository
+## Snapshot the existing configs  
 ```
-make sync
+./install.sh snapshot
 ```
 
 ### Quick setup
 ```
-sudo apt update && sudo apt upgrade -y
-sudo apt install build-essential git -y
-git clone https://github.com/arinmis/dotfiles.git
-cd dotfiles
-sudo make programs 
-make conf 
+sudo ./install.sh all
 ```
-
-Also run `PluginInstall` command in `Vim` command mode
