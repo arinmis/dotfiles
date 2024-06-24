@@ -1,4 +1,4 @@
-#!/bin/bash
+!/bin/bash
 
 # Store the original user's home directory
 set -e
