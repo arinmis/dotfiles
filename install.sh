@@ -20,7 +20,7 @@ function conf() {
   echo "==> Installing runtime config is completed!!!"
 }
 
-function sync() {
+function snapshot() {
   cp ~/.vimrc config 
   cp ~/.tmux.conf config
   cp ~/.bashrc config
@@ -58,8 +58,8 @@ case "$1" in
   conf)
     conf
     ;;
-  sync)
-    sync
+  snapshot)
+    snapshot
     ;;
   *)
     echo "Usage: $0 {all|programs|conf|sync}"
