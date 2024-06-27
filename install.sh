@@ -1,4 +1,4 @@
-!/bin/bash
+#!/bin/bash
 
 # Store the original user's home directory
 set -e
@@ -27,7 +27,7 @@ function snapshot() {
   cp ~/.gitignore config
   rm -rf config/nvim
   cp -r ~/.config/nvim config
-  echo "==> Updating config files is completed!!!"
+  echo "==> Snapshoting config files is completed!!!"
 }
 
 function install_neovim() {
@@ -62,6 +62,6 @@ case "$1" in
     snapshot
     ;;
   *)
-    echo "Usage: $0 {all|programs|conf|sync}"
+    echo "Usage: $0 {all|programs|conf|snapshot}"
     exit 1
 esac
