@@ -22,6 +22,13 @@ return {
         enable = true,  
         update_cwd = true, 
       },
+      filters = {
+        dotfiles = false,  
+      },
+      git = {
+        enable = true,     
+        ignore = false,    
+      },
     }    
   },
   {
@@ -35,7 +42,18 @@ return {
             width = .8,   
             prompt_position = "bottom", 
           },
+          vimgrep_arguments = {
+                'rg',
+                '--color=never',
+                '--no-heading',
+                '--with-filename',
+                '--line-number',
+                '--column',
+                '--smart-case',
+                '--hidden',
+              },
         },
+        file_ignore_patterns = {},  
         pickers = {
           find_files = {
             previewer = false,  
